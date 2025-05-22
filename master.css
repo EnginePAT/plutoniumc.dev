@@ -1,0 +1,126 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up body background and font */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Very dark background */
+    color: #e0e0e0; /* Light grey text for readability */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1c1c1c; /* Dark gray header */
+    border-bottom: 2px solid #333; /* Subtle border for separation */
+}
+
+header img {
+    height: 50px; /* Logo size */
+}
+
+header h1 {
+    color: #64b5f6; /* Light blue for the main heading */
+    font-size: 2rem;
+    margin-left: -450px; /* Slight space between logo and title */
+    text-align: left;
+}
+
+header a {
+    text-decoration: none;
+    color: #64b5f6; /* Same light blue as the header */
+}
+
+header section {
+    display: flex;
+    gap: 15px;
+}
+
+header button {
+    padding: 10px 20px;
+    border: 1px solid #333; /* Subtle border for buttons */
+    background-color: #333; /* Dark background for buttons */
+    color: #e0e0e0; /* Light text for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+header button:hover {
+    background-color: #506c84; /* Darker blue when hovered */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    padding: 40px;
+    background-color: #1e1e1e; /* Dark background for main section */
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: #64b5f6; /* Light blue for the title */
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1c1c1c; /* Same dark gray as the header */
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #333; /* Subtle border for separation */
+}
+
+footer section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #64b5f6; /* Light blue for footer links */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #b0bec5; /* Light grey for the footer copyright */
+}
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header section {
+        margin-top: 15px;
+    }
+
+    footer section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Smaller title size on mobile */
+    }
+}
